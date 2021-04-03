@@ -6,8 +6,8 @@ export class ProductsService {
     private products:product[] = [
         {id:1, price:100, title:"name"},
         {id:2, price:200, title:"name2"},
-        {id:3, price:300, title:"name3"},
-        {id:4, price:400, title:"name4"},
+        {id:3, price:400, title:"name3"},
+        {id:4, price:300, title:"name4"},
     ]
 
     getAll():product[] {
@@ -19,9 +19,7 @@ export class ProductsService {
     }
 
     create(data:product):string {
-        console.log(data)
         this.products = [...this.products, data]
         return 'ok'
     }
-
 }
